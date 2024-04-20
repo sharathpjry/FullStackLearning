@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tag</title>
+</head>
+
+<body>
+    <h1>Student admission form</h1>
+    <form action="backend.php">
+        <div>
+            Name : <input type="text" name="studentName" id="id" placeholder="enter name" value="">
+        </div><br>
+        <div>
+            Contact : <input type="number" name="number" id="number" value="">
+        </div><br>
+        <div>
+            Gender : Male<input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
+        </div>
+        <!-- checkbox example , To have deafault checkbox ticked use checked keyword -->
+        <br>
+        \<div>
+            Do you accept the terms and conditions <input type="checkbox" name="checkbox" id="" checked>
+        </div><br>
+        <div>
+            Date of Birth : <input type="date" name="DOB" id="">
+        </div><br>
+        <div>
+            Upload a File : <input type="file" name="file" id="" accept="image">
+        </div><br>
+        <div>
+            Address <br><textarea name="Address" id="" cols="10" rows="10s"></textarea>
+        </div><br>
+        <div>
+            Select city: <select name="options" id="">
+                <option value="">Bangalore</option>
+                <option value="">Mumbai</option>
+                <option value="">Pune</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>
