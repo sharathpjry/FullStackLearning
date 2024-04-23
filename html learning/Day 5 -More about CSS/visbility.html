@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: solid black;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+        }
+
+        #yellow{
+            background-color: yellow;
+            position: relative;
+        }
+
+        #red {
+            background-color: red;
+            position: relative;
+            /* zindex will make this redbox overlap above green */
+            /* z-index: 100; */
+        }
+
+        #blue {
+            background-color: blue;
+            /* if you want this box to vanish and want some blank white space which suggest there was a box */
+            /* visibility: hidden; */
+            position: relative;
+        }
+
+        #green {
+            background-color: green;
+            /* if you want this box to vanish and do not want some blank white space which suggest there was a box */
+            /* display: none; */
+            position: relative;
+            top: -45px;
+            left: 45px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="red">
+        <h1>red</h1>
+    </div>
+    <div class="box" id="green">
+        <h2>green</h2>
+
+        <div class="box1" id ="yellow">
+            <h3>Yellow</h3>
+        </div>
+    </div>
+
+    <div class="box" id="blue">
+        <h3>blue</h3>
+    </div>
+
+
+</body>
+
+</html>
